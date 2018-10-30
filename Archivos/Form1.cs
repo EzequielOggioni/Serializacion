@@ -131,6 +131,12 @@ namespace Archivos
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                 txtSave.Text = saveFileDialog1.FileName;
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            frmVisorArchivo frm = new frmVisorArchivo();
+            frm.Show();
+        }
     }
 
     [Serializable]
